@@ -9,10 +9,11 @@
     <title>30 Minute AngularJS Extravaganza</title>
 </head>
 <body ng-app="myApp">
-    <div>
+    <div ng-controller="WelcomeController as vm">
         <h1>30 Minute AngularJS Extravaganza</h1>
-        <input type="text" ng-model="intro">
-        {{intro}}
+        <input type="text" ng-model="writeHere">
+        {{vm.disclaimer}}
+        {{writeHere}}
     </div>
 </body>
 </html>
